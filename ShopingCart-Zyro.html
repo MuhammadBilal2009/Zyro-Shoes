@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>ZYRO SHOES | Engineered Kinetic Footwear</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#1a1c1d", "outline": "#747878", "tertiary-fixed-dim": "#c6c5cf", "outline-variant": "#c4c7c7", "secondary-fixed-dim": "#ffb3b6", "surface-tint": "#5f5e5e", "secondary-container": "#e21e49", "surface-container-high": "#e8e8e9", "surface-bright": "#f9f9fa", "on-primary": "#ffffff", "primary-container": "#1c1b1b", "inverse-surface": "#2f3132", "on-secondary-fixed-variant": "#920028", "on-tertiary-fixed": "#1a1b22", "on-primary-container": "#858383", "surface-container-lowest": "#ffffff", "surface": "#f9f9fa", "on-primary-fixed-variant": "#474646", "on-secondary": "#ffffff", "surface-container": "#eeeeef", "tertiary-container": "#1a1b22", "background": "#f9f9fa", "on-primary-fixed": "#1c1b1b", "on-tertiary-container": "#83838c", "surface-variant": "#e2e2e3", "on-secondary-fixed": "#40000c", "error-container": "#ffdad6", "primary-fixed": "#e5e2e1", "surface-dim": "#dadadb", "primary-fixed-dim": "#c8c6c5", "inverse-primary": "#c8c6c5", "on-tertiary-fixed-variant": "#46464e", "on-tertiary": "#ffffff", "inverse-on-surface": "#f0f1f2", "surface-container-highest": "#e2e2e3", "surface-container-low": "#f3f3f4", "on-surface": "#1a1c1d", "error": "#ba1a1a", "primary": "#000000", "tertiary-fixed": "#e3e1ec", "on-secondary-container": "#fffbff", "secondary": "#ba0035", "on-error": "#ffffff", "on-surface-variant": "#444748", "on-error-container": "#93000a", "secondary-fixed": "#ffdada", "tertiary": "#000000" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "1.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "margin-desktop": "3.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin-tablet": "2rem" }, fontFamily: { "headline-lg": ["Space Grotesk"], "body-md": ["Inter"], "headline-md": ["Space Grotesk"], "label-badge": ["Space Grotesk"], "body-lg": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-caps": ["Space Grotesk"], "display-hero": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-sm": ["Inter"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-badge": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }], "display-hero": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen">
+    <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter">
+            <div class="flex items-center gap-gutter-desktop"><a class="flex items-baseline tracking-tight"
+                    data-path="home" href="#"><span
+                        class="font-headline-md text-headline-md tracking-tighter text-primary font-bold">ZYRO</span><span
+                        class="inline-block w-2 h-2 rounded-full bg-secondary-container mx-1 align-baseline"></span><span
+                        class="font-label-caps text-label-caps tracking-[0.25em] text-on-surface font-semibold ml-0.5">SHOES</span></a>
+                <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="home" href="home.html">Home</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="shop-catalog" href="men-shoes.html">Shop Catalog</a><a aria-current="page"
+                        class="uppercase transition-colors tracking-widest text-primary font-bold" data-path="cart"
+                        href="ShopingCart-Zyro.html">Cart</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="checkout" href="checkout.html">Checkout</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="about-contact" href="about.html">About &amp; Contact</a></nav>
+            </div>
+            <div class="flex items-center gap-space-md"><button aria-label="Search catalog"
+                    class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button
+                    aria-label="Wishlist"
+                    class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button><a
+                    aria-label="Shopping Cart"
+                    class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    data-path="cart" href="#"><span
+                        class="material-symbols-outlined text-[20px]">shopping_bag</span><span
+                        class="absolute -top-1 -right-1 min-w-[20px] h-5 px-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge flex items-center justify-center"
+                        id="cart-badge">0</span></a><a
+                    class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-full bg-surface-container-high hover:bg-primary text-on-surface hover:text-on-primary font-label-caps text-label-caps uppercase transition-all tracking-wider"
+                    data-path="about-contact" href="#">Support</a>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-background flex-grow">
+        <div class="flex flex-col w-full">
+            <!-- Top Visual Accent / Breadcrumb Bar -->
+            <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg pb-space-sm">
+                <div class="flex items-center justify-between">
+                    <div
+                        class="flex items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest">
+                        <a class="hover:text-primary transition-colors" data-path="home"
+                            href="men-shoes.html">Catalog</a>
+                        <span>/</span>
+                        <span class="text-primary font-bold">Kinetic Checkout Staging</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                        <span class="font-label-badge text-label-badge text-on-surface uppercase tracking-wider">Cart
+                            Reservation • 14:59 Left</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Main Cart Section -->
+            <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pb-space-xl">
+                <!-- Header Title with Live Counter Badge -->
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md mb-space-lg">
+                    <div class="flex items-baseline gap-space-sm flex-wrap">
+                        <h1
+                            class="font-display-hero-mobile lg:font-display-hero text-display-hero-mobile lg:text-display-hero text-on-background tracking-tighter uppercase font-bold">
+                            Your Shopping Bag
+                        </h1>
+                        <span
+                            class="px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-label-badge text-label-badge uppercase tracking-wider font-bold"
+                            id="header-item-count-badge">
+                            2 Items
+                        </span>
+                    </div>
+                    <div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+                        <span class="material-symbols-outlined text-[16px] text-secondary-container"
+                            style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+                        <span>Eligible for <strong>Complimentary Kinetic Express Freight</strong></span>
+                    </div>
+                </div>
+                <!-- Active Cart Layout (Two-Column) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start"
+                    id="cart-content-container">
+                    <!-- Left Column: Bag Items & Promo Entry -->
+                    <div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-md">
+                        <!-- Cart Items List Container -->
+                        <div class="flex flex-col gap-space-md" id="cart-items-wrapper">
+                            <!-- Item 1: Zyro Phantom X Carbon -->
+                            <article
+                                class="group relative bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg p-space-md md:p-space-lg shadow-sm flex flex-col sm:flex-row gap-space-md"
+                                data-id="1" data-price="210" id="cart-item-1">
+                                <!-- Thumbnail Visual -->
+                                <div
+                                    class="w-full sm:w-40 sm:h-40 h-48 rounded-md bg-surface-container-highest relative overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                    <img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                        data-alt="Editorial studio photograph of Zyro Phantom X Carbon high-performance running sneaker, featuring aggressive carbon fiber external propulsion plate, aerodynamic matte black ripstop mesh, crimson kinetic accents, clinical isolated studio lighting, avant-garde footwear tech minimal composition"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSlxH5sSWgR2zBK9Y_ZR3L58E8j9NbwiKp-lANH2kRX_EzLR-1RTv_xHSOAOoHBzni5J6dbpN4U61qR4iKgPOURT9oDmRKkb21SM2f6BL_Ed9AcuZ22x_z1T_Fnlab60vBKMh13EKnunaqbCVzIAXMCvStr9j0z0cQHhk9aZ6SZVJMpiK118l_mjPkm1xdS7d7HITegJSOeSgBkv4FoIgNKwdUeqIuJ0XGR8_bdtE" />
+                                    <span
+                                        class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary/90 text-on-primary font-label-badge text-label-badge uppercase tracking-widest">
+                                        Lab Prot-01
+                                    </span>
+                                </div>
+                                <!-- Product Details & Controls -->
+                                <div class="flex flex-col justify-between flex-grow min-w-0">
+                                    <div>
+                                        <div class="flex items-start justify-between gap-space-sm">
+                                            <div>
+                                                <span
+                                                    class="font-label-caps text-label-caps uppercase text-secondary-container tracking-widest font-bold">Carbon
+                                                    Propulsion Series</span>
+                                                <h2
+                                                    class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">
+                                                    Zyro Phantom X Carbon</h2>
+                                            </div>
+                                            <div class="text-right flex-shrink-0">
+                                                <span
+                                                    class="font-headline-md text-headline-md text-primary font-bold item-row-total"
+                                                    id="row-total-1">$210.00</span>
+                                                <p class="font-body-sm text-body-sm text-outline">$210.00 / unit</p>
+                                            </div>
+                                        </div>
+                                        <!-- Specs Pill Row -->
+                                        <div
+                                            class="flex items-center gap-space-xs flex-wrap mt-space-xs font-label-caps text-label-caps text-on-surface-variant">
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Size:
+                                                US 10 M</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Color:
+                                                Obsidian / Crimson Plate</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Weight:
+                                                198g</span>
+                                        </div>
+                                    </div>
+                                    <!-- Interactive Controls: Quantity, Wishlist, Delete -->
+                                    <div
+                                        class="flex items-center justify-between gap-space-sm mt-space-md pt-space-sm border-none">
+                                        <!-- Quantity Pill -->
+                                        <div
+                                            class="flex items-center rounded-full bg-surface-container-highest px-1 py-0.5 shadow-sm">
+                                            <button aria-label="Decrease quantity"
+                                                class="qty-btn-minus w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-lowest transition-colors"
+                                                onclick="window.zyroUpdateItemQty('1', -1)" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">remove</span>
+                                            </button>
+                                            <span
+                                                class="w-8 text-center font-headline-sm text-headline-sm text-on-surface font-semibold select-none"
+                                                id="qty-val-1">1</span>
+                                            <button aria-label="Increase quantity"
+                                                class="qty-btn-plus w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-lowest transition-colors"
+                                                onclick="window.zyroUpdateItemQty('1', 1)" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">add</span>
+                                            </button>
+                                        </div>
+                                        <!-- Actions: Wishlist & Remove -->
+                                        <div class="flex items-center gap-space-sm">
+                                            <button
+                                                class="wishlist-btn inline-flex items-center gap-1 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded-full hover:bg-surface-container-highest"
+                                                onclick="window.zyroMoveToWishlist('1')" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">bookmark</span>
+                                                <span class="hidden sm:inline">Move to Wishlist</span>
+                                            </button>
+                                            <button aria-label="Remove item"
+                                                class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/40 transition-all"
+                                                onclick="window.zyroRemoveItem('1')" type="button">
+                                                <span class="material-symbols-outlined text-[18px]">delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Item 2: Zyro Streetcraft Low-Top -->
+                            <article
+                                class="group relative bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg p-space-md md:p-space-lg shadow-sm flex flex-col sm:flex-row gap-space-md"
+                                data-id="2" data-price="195" id="cart-item-2">
+                                <!-- Thumbnail Visual -->
+                                <div
+                                    class="w-full sm:w-40 sm:h-40 h-48 rounded-md bg-surface-container-highest relative overflow-hidden flex-shrink-0 flex items-center justify-center">
+                                    <img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                        data-alt="Technical architectural footwear photograph of Zyro Streetcraft Low-Top technical sneaker, concrete gray suede with molded architectural TPU heel cage, precision stitch work, studio top-side angle with harsh luxury minimalist shadows, neutral palette"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqX_Wa4nCVLXHE8IWm3zw-x2AVfkTCZYlWjC6pr3HAuwHs77FWQfcKVgsYXEI56YgSAm6zRFhM1tElRCFZm_EQQBTRff4-EiZibSXHKj75knkG1pgbulqmMsXxzJyj1Rg6mRgyKWZ8CvyOy2fuPHnNLm6ggQvNZlT69tQllc9e2sxFH2OoHg4ZlRHCYB-KESDny5AjoWy4Ky1iAG9szN4hSvsrbGIbd8TOEck5MqU" />
+                                    <span
+                                        class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge uppercase tracking-widest">
+                                        Core Series
+                                    </span>
+                                </div>
+                                <!-- Product Details & Controls -->
+                                <div class="flex flex-col justify-between flex-grow min-w-0">
+                                    <div>
+                                        <div class="flex items-start justify-between gap-space-sm">
+                                            <div>
+                                                <span
+                                                    class="font-label-caps text-label-caps uppercase text-outline tracking-widest font-bold">Kinetic
+                                                    Streetwear Lab</span>
+                                                <h2
+                                                    class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">
+                                                    Zyro Streetcraft Low-Top</h2>
+                                            </div>
+                                            <div class="text-right flex-shrink-0">
+                                                <span
+                                                    class="font-headline-md text-headline-md text-primary font-bold item-row-total"
+                                                    id="row-total-2">$195.00</span>
+                                                <p class="font-body-sm text-body-sm text-outline">$195.00 / unit</p>
+                                            </div>
+                                        </div>
+                                        <!-- Specs Pill Row -->
+                                        <div
+                                            class="flex items-center gap-space-xs flex-wrap mt-space-xs font-label-caps text-label-caps text-on-surface-variant">
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Size:
+                                                US 9.5 M</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Color:
+                                                Glacial Gray / Basalt Core</span>
+                                            <span
+                                                class="px-2.5 py-1 rounded-full bg-surface-container-highest font-medium">Sole:
+                                                Kinetic Energy Grip</span>
+                                        </div>
+                                    </div>
+                                    <!-- Interactive Controls: Quantity, Wishlist, Delete -->
+                                    <div
+                                        class="flex items-center justify-between gap-space-sm mt-space-md pt-space-sm border-none">
+                                        <!-- Quantity Pill -->
+                                        <div
+                                            class="flex items-center rounded-full bg-surface-container-highest px-1 py-0.5 shadow-sm">
+                                            <button aria-label="Decrease quantity"
+                                                class="qty-btn-minus w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-lowest transition-colors"
+                                                onclick="window.zyroUpdateItemQty('2', -1)" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">remove</span>
+                                            </button>
+                                            <span
+                                                class="w-8 text-center font-headline-sm text-headline-sm text-on-surface font-semibold select-none"
+                                                id="qty-val-2">1</span>
+                                            <button aria-label="Increase quantity"
+                                                class="qty-btn-plus w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-lowest transition-colors"
+                                                onclick="window.zyroUpdateItemQty('2', 1)" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">add</span>
+                                            </button>
+                                        </div>
+                                        <!-- Actions: Wishlist & Remove -->
+                                        <div class="flex items-center gap-space-sm">
+                                            <button
+                                                class="wishlist-btn inline-flex items-center gap-1 font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded-full hover:bg-surface-container-highest"
+                                                onclick="window.zyroMoveToWishlist('2')" type="button">
+                                                <span class="material-symbols-outlined text-[16px]">bookmark</span>
+                                                <span class="hidden sm:inline">Move to Wishlist</span>
+                                            </button>
+                                            <button aria-label="Remove item"
+                                                class="w-8 h-8 rounded-full flex items-center justify-center text-outline hover:text-error hover:bg-error-container/40 transition-all"
+                                                onclick="window.zyroRemoveItem('2')" type="button">
+                                                <span class="material-symbols-outlined text-[18px]">delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Promotional Voucher Block -->
+                        <div class="bg-surface-container-low rounded-lg p-space-md md:p-space-lg shadow-sm">
+                            <div
+                                class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm">
+                                <div class="flex items-center gap-space-sm">
+                                    <span
+                                        class="material-symbols-outlined text-[24px] text-secondary-container">sell</span>
+                                    <div>
+                                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                                            Institutional Drop or Promo Code</h3>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant">Enter member pass
+                                            or voucher for direct laboratory allocation discount.</p>
+                                    </div>
+                                </div>
+                                <form class="flex items-center gap-2 mt-2 sm:mt-0" id="promo-form"
+                                    onsubmit="window.zyroApplyPromo(event)">
+                                    <div class="relative flex-1 sm:w-48">
+                                        <input
+                                            class="h-11 w-full rounded-full bg-surface-container-lowest px-4 font-body-sm text-body-sm uppercase text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-primary shadow-sm"
+                                            id="promo-input" placeholder="e.g. KINETIC10" type="text" />
+                                    </div>
+                                    <button
+                                        class="h-11 px-6 rounded-full bg-primary hover:bg-on-surface-variant text-on-primary font-label-caps text-label-caps uppercase tracking-wider transition-all flex items-center justify-center flex-shrink-0 shadow-sm active:scale-95"
+                                        type="submit">
+                                        Apply
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- Promo status notification -->
+                            <div class="hidden mt-space-sm font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5"
+                                id="promo-message"></div>
+                        </div>
+                        <!-- Free Freight Progress Indicator Card -->
+                        <div class="bg-surface-container-low rounded-lg p-space-md shadow-sm">
+                            <div class="flex items-center justify-between mb-2">
+                                <span
+                                    class="font-label-caps text-label-caps uppercase tracking-wider font-semibold text-on-surface">Kinetic
+                                    Freight Allocation</span>
+                                <span
+                                    class="font-label-badge text-label-badge text-secondary-container uppercase tracking-wider font-bold"
+                                    id="freight-progress-label">Qualified • Free Global Courier</span>
+                            </div>
+                            <div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+                                <div class="h-full bg-secondary-container rounded-full transition-all duration-500 w-full"
+                                    id="freight-bar"></div>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-outline mt-2">All orders exceeding $150.00 qualify
+                                for climate-neutral temperature-controlled courier delivery.</p>
+                        </div>
+                    </div>
+                    <!-- Right Column: Sticky Order Summary & Direct Actions -->
+                    <div class="lg:col-span-5 xl:col-span-4 sticky top-24">
+                        <div class="bg-surface-container rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+                            <div class="flex items-baseline justify-between">
+                                <h2
+                                    class="font-headline-md text-headline-md text-primary font-bold tracking-tight uppercase">
+                                    Order Summary</h2>
+                                <span
+                                    class="font-label-badge text-label-badge uppercase tracking-wider text-outline">SECURE
+                                    DESK</span>
+                            </div>
+                            <!-- Price Calculations Matrix -->
+                            <div class="flex flex-col gap-space-sm pt-space-xs font-body-md text-body-md">
+                                <div class="flex items-center justify-between text-on-surface-variant">
+                                    <span>Subtotal (<span id="summary-items-count">2</span> items)</span>
+                                    <span class="font-semibold text-on-surface" id="summary-subtotal">$405.00</span>
+                                </div>
+                                <div class="flex items-center justify-between text-on-surface-variant">
+                                    <span class="flex items-center gap-1">
+                                        Estimated Shipping
+                                        <span class="material-symbols-outlined text-[14px] text-outline"
+                                            title="Standard trackable kinetic delivery">info</span>
+                                    </span>
+                                    <span
+                                        class="font-semibold text-secondary-container uppercase font-label-caps text-label-caps tracking-wider"
+                                        id="summary-shipping">FREE</span>
+                                </div>
+                                <div class="flex items-center justify-between text-on-surface-variant">
+                                    <span class="flex items-center gap-1">
+                                        Estimated Tax (6.5%)
+                                        <span class="material-symbols-outlined text-[14px] text-outline"
+                                            title="Calculated based on institutional standard rates">info</span>
+                                    </span>
+                                    <span class="font-semibold text-on-surface" id="summary-tax">$26.33</span>
+                                </div>
+                                <div class="hidden flex items-center justify-between text-secondary-container"
+                                    id="summary-discount-row">
+                                    <span class="font-label-caps text-label-caps uppercase tracking-wider">Promotion
+                                        (KINETIC10)</span>
+                                    <span class="font-semibold" id="summary-discount">-$40.50</span>
+                                </div>
+                            </div>
+                            <!-- Total Highlight Bar -->
+                            <div
+                                class="pt-space-md border-t-0 bg-surface-container-lowest rounded-md p-space-md flex items-baseline justify-between shadow-sm">
+                                <div>
+                                    <span
+                                        class="font-label-caps text-label-caps uppercase text-outline tracking-wider font-bold block">Estimated
+                                        Total</span>
+                                    <span class="font-body-sm text-body-sm text-on-surface-variant">Inclusive of VAT
+                                        &amp; laboratory handling</span>
+                                </div>
+                                <div class="text-right">
+                                    <span
+                                        class="font-headline-lg text-headline-lg text-secondary-container font-bold tracking-tighter"
+                                        id="summary-final-total">
+                                        $431.33
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Primary CTAs -->
+                            <div class="flex flex-col gap-space-xs mt-space-xs">
+                                <a class="w-full h-12 rounded-full bg-secondary-container hover:bg-secondary text-on-secondary-container font-headline-sm text-headline-sm font-bold uppercase tracking-wider flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]"
+                                    data-path="checkout" href="buy.html">
+                                    <span>Proceed to Checkout</span>
+                                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                                </a>
+                                <a class="w-full h-12 rounded-full bg-transparent hover:bg-surface-container-highest text-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center transition-all"
+                                    data-path="shop-catalog" href="shop.html">
+                                    Continue Shopping
+                                </a>
+                            </div>
+                            <!-- Trust & Security Reassurance Micro-Badges -->
+                            <div class="pt-space-md flex flex-col gap-space-xs border-none">
+                                <div
+                                    class="flex items-center gap-space-sm p-2 rounded bg-surface-container-lowest/80 text-on-surface font-body-sm text-body-sm">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-[20px]">lock</span>
+                                    <div class="min-w-0">
+                                        <span class="font-label-caps text-label-caps font-bold block">256-Bit SSL
+                                            Encrypted Protocol</span>
+                                        <span class="text-outline text-body-sm">Zero logging of financial
+                                            credentials</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center gap-space-sm p-2 rounded bg-surface-container-lowest/80 text-on-surface font-body-sm text-body-sm">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-[20px]">published_with_changes</span>
+                                    <div class="min-w-0">
+                                        <span class="font-label-caps text-label-caps font-bold block">30-Day Money-Back
+                                            Field Guarantee</span>
+                                        <span class="text-outline text-body-sm">Test stride without voiding domestic
+                                            returns</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center gap-space-sm p-2 rounded bg-surface-container-lowest/80 text-on-surface font-body-sm text-body-sm">
+                                    <span
+                                        class="material-symbols-outlined text-secondary-container text-[20px]">verified_user</span>
+                                    <div class="min-w-0">
+                                        <span class="font-label-caps text-label-caps font-bold block">Official
+                                            Manufacturer Warranty</span>
+                                        <span class="text-outline text-body-sm">1-Year kinetic composite plate
+                                            integrity</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Empty State Fallback (Hidden Initially, Revealed on Empty Cart) -->
+                <div class="hidden flex flex-col items-center justify-center py-20 px-4 text-center max-w-lg mx-auto"
+                    id="cart-empty-state">
+                    <div
+                        class="w-24 h-24 rounded-full bg-surface-container-highest flex items-center justify-center mb-space-md text-outline">
+                        <span class="material-symbols-outlined text-[48px]">shopping_bag</span>
+                    </div>
+                    <span
+                        class="font-label-caps text-label-caps uppercase text-secondary-container tracking-widest font-bold mb-space-xs">Status:
+                        Empty Inventory</span>
+                    <h2
+                        class="font-headline-lg text-headline-lg text-on-background font-bold uppercase tracking-tight mb-space-xs">
+                        Your Bag Is Empty</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+                        You haven't reserved any performance footwear yet. Browse the laboratory archive or technical
+                        running silhouettes to initiate your kinetic pairing.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-space-sm w-full justify-center">
+                        <a class="h-12 px-8 rounded-full bg-primary hover:bg-on-surface-variant text-on-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-all"
+                            data-path="shop-catalog" href="shop.html">
+                            <span>Start Shopping Catalog</span>
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                        </a>
+                        <button
+                            class="h-12 px-8 rounded-full bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-caps text-label-caps uppercase tracking-wider transition-all"
+                            onclick="window.zyroResetSampleCart()" type="button">
+                            Restore Sample Items
+                        </button>
+                    </div>
+                </div>
+                <!-- Toast / Notification Element -->
+                <div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-full shadow-xl flex items-center gap-space-xs font-label-caps text-label-caps uppercase tracking-wider"
+                    id="cart-toast">
+                    <span class="material-symbols-outlined text-[18px] text-secondary-container">check_circle</span>
+                    <span id="cart-toast-text">Cart updated</span>
+                </div>
+            </section>
+        </div>
+        <!-- Inline Interactive Script for Cart Logic -->
+        <script>
+                (function () {
+                    // Initial state setup
+                    let cart = [
+                        { id: '1', name: 'Zyro Phantom X Carbon', price: 210.00, qty: 1, size: 'US 10 M' },
+                        { id: '2', name: 'Zyro Streetcraft Low-Top', price: 195.00, qty: 1, size: 'US 9.5 M' }
+                    ];
+
+                    let appliedDiscount = 0; // percentage, e.g. 0.10 for 10%
+                    const TAX_RATE = 0.065;
+                    const FREE_SHIPPING_THRESHOLD = 150.00;
+
+                    function showToast(message) {
+                        const toast = document.getElementById('cart-toast');
+                        const toastText = document.getElementById('cart-toast-text');
+                        if (!toast || !toastText) return;
+                        toastText.textContent = message;
+                        toast.classList.remove('translate-y-24', 'opacity-0');
+                        toast.classList.add('translate-y-0', 'opacity-100');
+                        setTimeout(() => {
+                            toast.classList.add('translate-y-24', 'opacity-0');
+                            toast.classList.remove('translate-y-0', 'opacity-100');
+                        }, 2400);
+                    }
+
+                    function recalculateCart() {
+                        const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+                        const subtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
+
+                        // Update Header and Summary Badges
+                        const headerBadge = document.getElementById('header-item-count-badge');
+                        const summaryCount = document.getElementById('summary-items-count');
+                        if (headerBadge) headerBadge.textContent = `${totalItems} ${totalItems === 1 ? 'Item' : 'Items'}`;
+                        if (summaryCount) summaryCount.textContent = totalItems;
+
+                        // Sync with global header badge if exists
+                        const globalBadge = document.getElementById('cart-badge');
+                        if (globalBadge) {
+                            globalBadge.textContent = totalItems;
+                            globalBadge.style.display = totalItems > 0 ? 'flex' : 'none';
+                        }
+
+                        // Handle Empty State Toggle
+                        const contentContainer = document.getElementById('cart-content-container');
+                        const emptyState = document.getElementById('cart-empty-state');
+                        if (cart.length === 0) {
+                            if (contentContainer) contentContainer.classList.add('hidden');
+                            if (emptyState) emptyState.classList.remove('hidden');
+                            return;
+                        } else {
+                            if (contentContainer) contentContainer.classList.remove('hidden');
+                            if (emptyState) emptyState.classList.add('hidden');
+                        }
+
+                        // Calculations
+                        const discountAmount = subtotal * appliedDiscount;
+                        const taxableAmount = Math.max(0, subtotal - discountAmount);
+                        const tax = taxableAmount * TAX_RATE;
+                        const isFreeShipping = subtotal >= FREE_SHIPPING_THRESHOLD;
+                        const shipping = isFreeShipping ? 0.00 : 18.00;
+                        const finalTotal = taxableAmount + tax + shipping;
+
+                        // DOM Elements
+                        const subtotalEl = document.getElementById('summary-subtotal');
+                        const taxEl = document.getElementById('summary-tax');
+                        const shippingEl = document.getElementById('summary-shipping');
+                        const finalTotalEl = document.getElementById('summary-final-total');
+                        const discountRow = document.getElementById('summary-discount-row');
+                        const discountEl = document.getElementById('summary-discount');
+                        const freightBar = document.getElementById('freight-bar');
+                        const freightLabel = document.getElementById('freight-progress-label');
+
+                        if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+                        if (taxEl) taxEl.textContent = `$${tax.toFixed(2)}`;
+
+                        if (shippingEl) {
+                            shippingEl.textContent = isFreeShipping ? 'FREE' : `$${shipping.toFixed(2)}`;
+                            shippingEl.className = isFreeShipping
+                                ? 'font-semibold text-secondary-container uppercase font-label-caps text-label-caps tracking-wider'
+                                : 'font-semibold text-on-surface';
+                        }
+
+                        if (discountRow && discountEl) {
+                            if (appliedDiscount > 0) {
+                                discountRow.classList.remove('hidden');
+                                discountEl.textContent = `-$${discountAmount.toFixed(2)}`;
+                            } else {
+                                discountRow.classList.add('hidden');
+                            }
+                        }
+
+                        if (finalTotalEl) finalTotalEl.textContent = `$${finalTotal.toFixed(2)}`;
+
+                        // Freight Progress Bar
+                        if (freightBar && freightLabel) {
+                            const percentage = Math.min(100, Math.round((subtotal / FREE_SHIPPING_THRESHOLD) * 100));
+                            freightBar.style.width = `${percentage}%`;
+                            if (isFreeShipping) {
+                                freightLabel.textContent = 'Qualified • Free Global Courier';
+                                freightLabel.className = 'font-label-badge text-label-badge text-secondary-container uppercase tracking-wider font-bold';
+                            } else {
+                                const remaining = (FREE_SHIPPING_THRESHOLD - subtotal).toFixed(2);
+                                freightLabel.textContent = `Add $${remaining} For Free Freight`;
+                                freightLabel.className = 'font-label-badge text-label-badge text-outline uppercase tracking-wider font-bold';
+                            }
+                        }
+                    }
+
+                    // Update item quantity
+                    window.zyroUpdateItemQty = function (id, delta) {
+                        const item = cart.find(i => i.id === id);
+                        if (!item) return;
+
+                        item.qty = Math.max(1, item.qty + delta);
+                        const qtySpan = document.getElementById(`qty-val-${id}`);
+                        const rowTotal = document.getElementById(`row-total-${id}`);
+
+                        if (qtySpan) qtySpan.textContent = item.qty;
+                        if (rowTotal) rowTotal.textContent = `$${(item.price * item.qty).toFixed(2)}`;
+
+                        recalculateCart();
+                        showToast(`Updated ${item.name} quantity to ${item.qty}`);
+                    };
+
+                    // Remove Item with smooth transition
+                    window.zyroRemoveItem = function (id) {
+                        const itemEl = document.getElementById(`cart-item-${id}`);
+                        const itemObj = cart.find(i => i.id === id);
+                        const name = itemObj ? itemObj.name : 'Item';
+
+                        if (itemEl) {
+                            itemEl.style.transition = 'all 0.3s ease-out';
+                            itemEl.style.opacity = '0';
+                            itemEl.style.transform = 'scale(0.95) translateY(-10px)';
+                            setTimeout(() => {
+                                itemEl.remove();
+                                cart = cart.filter(i => i.id !== id);
+                                recalculateCart();
+                                showToast(`Removed ${name} from bag`);
+                            }, 300);
+                        } else {
+                            cart = cart.filter(i => i.id !== id);
+                            recalculateCart();
+                        }
+                    };
+
+                    // Move to Wishlist
+                    window.zyroMoveToWishlist = function (id) {
+                        const item = cart.find(i => i.id === id);
+                        const name = item ? item.name : 'Item';
+                        window.zyroRemoveItem(id);
+                        showToast(`Archived ${name} to Wishlist`);
+                    };
+
+                    // Apply promo
+                    window.zyroApplyPromo = function (e) {
+                        e.preventDefault();
+                        const input = document.getElementById('promo-input');
+                        const msg = document.getElementById('promo-message');
+                        if (!input || !msg) return;
+
+                        const code = input.value.trim().toUpperCase();
+                        if (!code) return;
+
+                        if (code === 'KINETIC10' || code === 'ZYRO10' || code === 'LABVIP') {
+                            appliedDiscount = 0.10;
+                            msg.textContent = `Promo applied: ${code} (-10% Laboratory Discount)`;
+                            msg.className = 'mt-space-sm font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5 text-secondary-container';
+                            msg.classList.remove('hidden');
+                            recalculateCart();
+                            showToast('10% Voucher Successfully Applied');
+                        } else {
+                            msg.textContent = 'Invalid or expired institutional token.';
+                            msg.className = 'mt-space-sm font-label-caps text-label-caps uppercase tracking-wider flex items-center gap-1.5 text-error';
+                            msg.classList.remove('hidden');
+                        }
+                    };
+
+                    // Restore sample state for demo verification
+                    window.zyroResetSampleCart = function () {
+                        window.location.reload();
+                    };
+
+                    // Initial Calculation Run
+                    document.addEventListener('DOMContentLoaded', recalculateCart);
+                    recalculateCart();
+                })();
+        </script>
+    </main>
+    <footer class="w-full bg-primary-container text-on-primary-container pt-space-xl pb-space-lg">
+        <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+            <div class="py-space-lg mb-space-xl">
+                <div class="flex items-center justify-between mb-space-md"><span
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-on-primary-container">Field
+                        Tested • Verified Owners</span><span
+                        class="font-label-badge text-label-badge tracking-wider text-on-primary-container">RATING 4.9 /
+                        5.0</span></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"The carbon
+                            plate stability in the Aero-Glide is unmatched. Sub-3 marathon with zero hot spots."</p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Marcus V.</span><span
+                                class="text-on-tertiary-container">Aero-Glide Pro • US 10.5</span>
+                        </div>
+                    </div>
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star_half</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"Minimal
+                            brutalist aesthetic with military-grade construction. Worn daily in NYC for 4 months
+                            straight."</p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Devon R.</span><span
+                                class="text-on-tertiary-container">K-01 Brutalist High • US 11</span>
+                        </div>
+                    </div>
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"Exceptional
+                            heel lock and kinetic return. You immediately feel the precision engineering in the gait."
+                        </p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Kaelen H.</span><span
+                                class="text-on-tertiary-container">V-Stride Kinetic • US 9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+                <div class="lg:col-span-5">
+                    <div class="flex items-baseline tracking-tight mb-space-sm"><span
+                            class="font-headline-md text-headline-md tracking-tighter text-surface-bright font-bold">ZYRO</span><span
+                            class="inline-block w-2 h-2 rounded-full bg-secondary-container mx-1 align-baseline"></span><span
+                            class="font-label-caps text-label-caps tracking-[0.25em] text-surface-bright font-semibold ml-0.5">SHOES</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-tertiary-container max-w-md mb-space-md">Engineered for
+                        every step. Premium craftsmanship meets cutting-edge kinetic ergonomics. Designed in technical
+                        athletic research laboratories for optimal cadence and structural longevity.</p>
+                    <div class="flex items-center gap-space-sm"><span
+                            class="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container flex items-center gap-1"><span
+                                class="material-symbols-outlined text-[16px] text-secondary-container">lock</span>
+                            256-Bit SSL Encrypted Protocol</span></div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Shop Catalog</h4>
+                    <ul class="space-y-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Kinetic Running</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Technical Streetwear</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Reinforced High-Tops</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog" href="#">Lab
+                                Performance Prototypes</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Archival Silhouettes</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Customer Care</h4>
+                    <ul class="space-y-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="checkout" href="#">Order
+                                Tracking</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Kinetic Size Matrix</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Global Returns &amp; Warranty</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Material Integrity Index</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Direct Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Dispatch Dispatcher</h4>
+                    <p class="font-body-sm text-body-sm text-on-tertiary-container mb-space-sm">Receive drop alerts,
+                        prototype allocations, and lab release logs directly to your inbox.</p>
+                    <form class="flex items-center gap-space-xs" onsubmit="event.preventDefault();"><input
+                            class="h-12 flex-1 rounded-full bg-tertiary-container px-space-md font-body-sm text-body-sm text-surface-bright placeholder:text-on-tertiary-container outline-none focus:ring-1 focus:ring-secondary-container transition-all"
+                            placeholder="Enter institutional or personal email" type="email" /><button
+                            class="h-12 px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider transition-all flex items-center justify-center"
+                            type="submit"><span
+                                class="material-symbols-outlined text-[18px]">arrow_forward</span></button></form>
+                </div>
+            </div>
+            <div
+                class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-tertiary-container">
+                <p>© 2025 ZYRO SHOES LABS INC. All engineering rights reserved.</p>
+                <div class="flex items-center gap-space-md font-label-badge text-label-badge uppercase tracking-wider">
+                    <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span
+                        class="text-secondary-container font-bold">SECURE CHECKOUT</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>(function () { function updateCart() { var cart = JSON.parse(localStorage.getItem('zyro_cart') || '[]'); var total = cart.reduce(function (acc, item) { return acc + (item.quantity || 1); }, 0); var badge = document.getElementById('cart-badge'); if (badge) { badge.textContent = total; badge.style.display = total > 0 ? 'flex' : 'none'; } } window.addEventListener('storage', updateCart); window.addEventListener('DOMContentLoaded', updateCart); window.updateZyroCart = updateCart; })();</script>
+</body>
+
+</html>

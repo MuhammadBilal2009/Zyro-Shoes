@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <title>ZYRO-Shoes | Engineered Kinetic Footwear</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#1a1c1d", "outline": "#747878", "tertiary-fixed-dim": "#c6c5cf", "outline-variant": "#c4c7c7", "secondary-fixed-dim": "#ffb3b6", "surface-tint": "#5f5e5e", "secondary-container": "#e21e49", "surface-container-high": "#e8e8e9", "surface-bright": "#f9f9fa", "on-primary": "#ffffff", "primary-container": "#1c1b1b", "inverse-surface": "#2f3132", "on-secondary-fixed-variant": "#920028", "on-tertiary-fixed": "#1a1b22", "on-primary-container": "#858383", "surface-container-lowest": "#ffffff", "surface": "#f9f9fa", "on-primary-fixed-variant": "#474646", "on-secondary": "#ffffff", "surface-container": "#eeeeef", "tertiary-container": "#1a1b22", "background": "#f9f9fa", "on-primary-fixed": "#1c1b1b", "on-tertiary-container": "#83838c", "surface-variant": "#e2e2e3", "on-secondary-fixed": "#40000c", "error-container": "#ffdad6", "primary-fixed": "#e5e2e1", "surface-dim": "#dadadb", "primary-fixed-dim": "#c8c6c5", "inverse-primary": "#c8c6c5", "on-tertiary-fixed-variant": "#46464e", "on-tertiary": "#ffffff", "inverse-on-surface": "#f0f1f2", "surface-container-highest": "#e2e2e3", "surface-container-low": "#f3f3f4", "on-surface": "#1a1c1d", "error": "#ba1a1a", "primary": "#000000", "tertiary-fixed": "#e3e1ec", "on-secondary-container": "#fffbff", "secondary": "#ba0035", "on-error": "#ffffff", "on-surface-variant": "#444748", "on-error-container": "#93000a", "secondary-fixed": "#ffdada", "tertiary": "#000000" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "1.25rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "margin-desktop": "3.5rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin-tablet": "2rem" }, fontFamily: { "headline-lg": ["Space Grotesk"], "body-md": ["Inter"], "headline-md": ["Space Grotesk"], "label-badge": ["Space Grotesk"], "body-lg": ["Inter"], "display-hero-mobile": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "label-caps": ["Space Grotesk"], "display-hero": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "body-sm": ["Inter"] }, fontSize: { "headline-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-badge": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }], "display-hero": ["56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }] } } } }</script>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen">
+    <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+        <div
+            class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter">
+            <div class="flex items-center gap-gutter-desktop"><a class="flex items-baseline tracking-tight"
+                    data-path="home" href="#"><span
+                        class="font-headline-md text-headline-md tracking-tighter text-primary font-bold">ZYRO</span><span
+                        class="inline-block w-2 h-2 rounded-full bg-secondary-container mx-1 align-baseline"></span><span
+                        class="font-label-caps text-label-caps tracking-[0.25em] text-on-surface font-semibold ml-0.5">SHOES</span></a>
+                <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a
+                        aria-current="page" class="uppercase transition-colors tracking-widest text-primary font-bold"
+                        data-path="home" href="home.html">Home</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="shop-catalog" href="men-shoes.html">Shop Catalog</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="cart" href="ShopingCart-Zyro.html">Cart</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="checkout" href="checkout.html">Checkout</a><a
+                        class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors tracking-widest"
+                        data-path="about-contact" href="about.html">About &amp; Contact</a></nav>
+            </div>
+            <div class="flex items-center gap-space-md"><button aria-label="Search catalog"
+                    class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button
+                    aria-label="Wishlist"
+                    class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button><a
+                    aria-label="Shopping Cart"
+                    class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all"
+                    data-path="cart" href="#"><span
+                        class="material-symbols-outlined text-[20px]">shopping_bag</span><span
+                        class="absolute -top-1 -right-1 min-w-[20px] h-5 px-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-badge text-label-badge flex items-center justify-center"
+                        id="cart-badge">0</span></a><a
+                    class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-full bg-surface-container-high hover:bg-primary text-on-surface hover:text-on-primary font-label-caps text-label-caps uppercase transition-all tracking-wider"
+                    data-path="about-contact" href="#">Support</a>
+                <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span
+                        class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
+            </div>
+        </div>
+    </header>
+    <main class="w-full pt-20 bg-background flex-grow">
+        <div class="flex flex-col w-full">
+            <!-- Toast Feedback Notification -->
+            <div class="fixed bottom-8 right-8 z-50 flex items-center gap-space-sm bg-primary text-on-primary px-space-md py-space-sm rounded-full shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-4"
+                id="zyro-toast">
+                <span class="material-symbols-outlined text-secondary-container text-[20px]"
+                    style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                <span class="font-label-caps text-label-caps tracking-wider uppercase" id="toast-message">Item added to
+                    kinetic cart</span>
+            </div>
+            <!-- Video Modal Drawer -->
+            <div class="fixed inset-0 z-50 flex items-center justify-center bg-primary/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300"
+                id="film-modal">
+                <div class="relative w-11/12 max-w-4xl bg-surface rounded-lg p-space-md shadow-2xl">
+                    <div class="flex items-center justify-between pb-space-sm">
+                        <span
+                            class="font-label-caps text-label-caps tracking-widest text-on-surface uppercase">Aero-Kinetic
+                            Lab Film // 01</span>
+                        <button
+                            class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all"
+                            id="close-film">
+                            <span class="material-symbols-outlined text-[20px]">close</span>
+                        </button>
+                    </div>
+                    <div
+                        class="relative w-full aspect-video rounded overflow-hidden bg-primary-container flex items-center justify-center">
+                        <div class="absolute inset-0 bg-cover bg-center"
+                            data-alt="Cinematic high-speed camera footage of an ultra-aerodynamic luxury carbon plate running shoe striking wet asphalt under stadium floodlights, creating fine water mist and displaying kinetic rebound in slow motion."
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9Qbu0h-kPs_9LqZeDGHrbRQiUt6dDRHw_TVwi0dAD-lvEaidD_wLPVHcM1KQth7akIBospL_EV8zB55OnOdp3o5q9Ubzax4RJzQkatptC86TWGB4ScFvBaHNRdaQzlh6uHhnYEHrryCbOc0sle8P8h_CIkmxYI08sDnY1QIyGopdgFxrkkqyY1ZBqIQcWWpGKsXSGzfdt-VkDe0R_4LLkXRwA8lgRi8NBRRZTbRw')">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+                        <div class="relative z-10 flex flex-col items-center gap-space-sm text-center px-space-md">
+                            <div
+                                class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center animate-pulse">
+                                <span class="material-symbols-outlined text-[32px]"
+                                    style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            </div>
+                            <span class="font-headline-md text-headline-md text-surface-bright tracking-tight">KINETIC
+                                PROPULSION IN MOTION</span>
+                            <p class="font-body-sm text-body-sm text-on-tertiary-container max-w-md">Documenting the
+                                3-year wind-tunnel calibration of the dual-density V4 carbon plate chassis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- HERO SECTION -->
+            <section class="relative w-full overflow-hidden bg-surface pb-space-xl pt-space-md">
+                <!-- Fluid background ambient gradients -->
+                <div
+                    class="absolute -top-32 -right-24 w-96 h-96 rounded-full bg-secondary-container/5 blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute top-1/2 -left-28 w-80 h-80 rounded-full bg-surface-container-high/40 blur-2xl pointer-events-none">
+                </div>
+                <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center min-h-[580px]">
+                        <!-- Left Editorial Block -->
+                        <div class="lg:col-span-6 z-10 flex flex-col items-start">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high mb-space-md">
+                                <span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+                                <span
+                                    class="font-label-caps text-label-caps uppercase tracking-[0.16em] text-on-surface">Fall
+                                    / Winter 2025 Prototype</span>
+                            </div>
+                            <h1
+                                class="font-display-hero text-display-hero tracking-tighter text-primary font-bold uppercase mb-space-md leading-none">
+                                ENGINEERED<br />
+                                <span class="text-secondary-container">FOR EVERY</span><br />
+                                STEP
+                            </h1>
+                            <p
+                                class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg leading-relaxed">
+                                Precision kinetic soles, zero-friction aerospace knit, and pure Italian architectural
+                                leather crafted for the modern man. Uncompromising velocity meets industrial luxury.
+                            </p>
+                            <!-- CTAs -->
+                            <div class="flex flex-wrap items-center gap-space-md w-full sm:w-auto">
+                                <a class="h-12 px-7 rounded-[20px] bg-primary hover:bg-on-background text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(226,30,73,0.35)] shadow-md group"
+                                    data-path="shop-catalog" href="men-shoes.html">
+                                    <span>Explore Collection</span>
+                                    <span
+                                        class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </a>
+
+
+
+                            </div>
+                            <!-- Technical Spec Badges Bar -->
+                            <div
+                                class="mt-space-lg pt-space-md flex flex-wrap items-center gap-space-sm text-on-surface-variant">
+                                <span
+                                    class="font-label-badge text-label-badge tracking-widest uppercase bg-surface-container px-3 py-1 rounded-full">ISO-9001
+                                    AEROSPACE YARN</span>
+                                <span
+                                    class="font-label-badge text-label-badge tracking-widest uppercase bg-surface-container px-3 py-1 rounded-full">3D
+                                    LATTICE GEOMETRY</span>
+                                <span
+                                    class="font-label-badge text-label-badge tracking-widest uppercase bg-surface-container px-3 py-1 rounded-full">MILANO
+                                    LEATHER LAB</span>
+                            </div>
+                        </div>
+                        <!-- Right Visual Showcase: Flagship Sneaker Stage -->
+                        <div class="lg:col-span-6 relative flex items-center justify-center mt-space-md lg:mt-0">
+                            <div class="relative w-full aspect-[4/3] max-w-xl flex items-center justify-center">
+                                <!-- Soft radial pedestal -->
+                                <div
+                                    class="absolute inset-8 rounded-full bg-gradient-to-tr from-surface-container to-surface-container-high/60 filter blur-xl transform -rotate-6">
+                                </div>
+                                <!-- Main Flagship Hero Sneaker -->
+                                <div
+                                    class="relative z-10 w-full h-full flex items-center justify-center p-space-sm transition-transform duration-700 hover:scale-[1.03]">
+                                    <div class="w-full h-full bg-contain bg-no-repeat bg-center"
+                                        data-alt="High-end studio hero shot of the Zyro Apex Pro Carbon Runner sneaker suspended in mid-air at an aggressive 45-degree angle. Monochromatic matte black ripstop mesh, crimson red heel stabilization collar, visible exposed carbon fiber propulsion plate shank in the arch, and raw sculptural white dual-density foam sole against a pristine studio background with dramatic directional rim lighting."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_2TmdoP-Ug4tbGNYVKBuvlRtrzBQtyvbCv8UOvMO9-3ruu23MBjc6sUBp0eAMSjlw2krCCIYcGFkcyCLDw_pO6UzM0Z0pBmodYRKiencaiA6p9RZLhSyST4da-B--61e6rGgAEq23JLBMZCCucTWxxbNsL8i070r0GM2-uQkWIQJOGf0HKOYcNu8OAH-iM12Qm8VJ0IdLIbZzRY6Fixk6XVBsNfYrlNi64ogDVSw')">
+                                    </div>
+                                </div>
+                                <!-- Floating Spec Badges with Crisp Glass Effect -->
+                                <!-- Badge 1: Weight -->
+                                <div
+                                    class="absolute top-4 left-2 sm:left-4 z-20 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-full shadow-lg flex items-center gap-2 animate-bounce [animation-duration:3s]">
+                                    <span
+                                        class="material-symbols-outlined text-[16px] text-secondary-container">scale</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="font-label-badge text-label-badge text-outline uppercase leading-none">Total
+                                            Mass</span>
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">Ultralight
+                                            210g</span>
+                                    </div>
+                                </div>
+                                <!-- Badge 2: Energy Return -->
+                                <div
+                                    class="absolute bottom-6 left-6 z-20 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-2 rounded-full shadow-lg flex items-center gap-2">
+                                    <span
+                                        class="material-symbols-outlined text-[18px] text-secondary-container">bolt</span>
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="font-label-badge text-label-badge text-outline uppercase leading-none">Kinetic
+                                            Yield</span>
+                                        <span
+                                            class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">Energy
+                                            Return 88%</span>
+                                    </div>
+                                </div>
+                                <!-- Badge 3: Carbon Plate -->
+                                <div
+                                    class="absolute top-1/4 right-0 sm:-right-2 z-20 bg-primary text-on-primary px-4 py-2 rounded-full shadow-xl flex items-center gap-2">
+                                    <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                                    <span
+                                        class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Carbon
+                                        Plate v4</span>
+                                </div>
+                                <!-- Shadow grounding underneath -->
+                                <div class="absolute -bottom-4 w-3/4 h-8 bg-primary/10 rounded-full blur-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Quick Stats Row -->
+                    <div
+                        class="mt-space-lg pt-space-lg grid grid-cols-2 lg:grid-cols-4 gap-gutter bg-surface-container-low rounded-lg p-space-md shadow-sm">
+                        <div class="flex items-center gap-space-sm p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary-container shadow-sm flex-shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">speed</span>
+                            </div>
+                            <div>
+                                <div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">
+                                    50,000+</div>
+                                <div
+                                    class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+                                    Miles Field Tested</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-sm p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary-container shadow-sm flex-shrink-0">
+                                <span class="material-symbols-outlined text-[22px]"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <div>
+                                <div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">4.9
+                                    / 5.0</div>
+                                <div
+                                    class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+                                    Athlete Rated</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-sm p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary-container shadow-sm flex-shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">verified_user</span>
+                            </div>
+                            <div>
+                                <div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">
+                                    30-Day</div>
+                                <div
+                                    class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+                                    Risk-Free Trial</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-space-sm p-space-xs">
+                            <div
+                                class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary-container shadow-sm flex-shrink-0">
+                                <span class="material-symbols-outlined text-[22px]">flight_takeoff</span>
+                            </div>
+                            <div>
+                                <div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">
+                                    Free Global</div>
+                                <div
+                                    class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-wider">
+                                    Express Dispatch</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FEATURED MEN'S CATEGORIES -->
+            <section class="w-full py-space-xl bg-background">
+                <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+                        <div>
+                            <span
+                                class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary-container font-semibold">Architectural
+                                Silhouettes</span>
+                            <h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight mt-1">
+                                Engineered Categories</h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Segmented by mechanical
+                            load, gait dynamics, and surface abrasion thresholds.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                        <!-- Category Card 1: Kinetic Running -->
+                        <div
+                            class="group relative bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                            <div class="flex items-start justify-between mb-space-sm">
+                                <span
+                                    class="font-label-badge text-label-badge text-on-surface-variant tracking-wider uppercase bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm">14
+                                    Models</span>
+                                <span class="font-label-caps text-label-caps text-outline tracking-widest">CAT.
+                                    01</span>
+                            </div>
+                            <!-- Product Image Frame -->
+                            <div
+                                class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+                                <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Studio catalog product photography of ultra-sleek aerodynamic mens long-distance kinetic running shoe in titanium gray and carbon black, aerodynamic curvature with dual density midsole foam and exposed heel crash pad, centered profile view on pure transparent isolation."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6s9ikYe9wu6ANRCoB2XDMRVp7on5vqYNzhv9m79ZSyM-_Lc-vI68nL_q5xBfeYmMvmEVEYAFOrO7cR39eSGlakDC2H9KoCo29wffBfr7bAdTqd1259WxU8Z_jEwmI3udCbgEoBNPuPCNOFgk5RXVPJldcu1R31vVqOYxxgmI3uCfR9_KffhemLPq2igDHqUy9Ri45b67jscckx9zt2HmiqrD8lWV4e1owbhOeTBs')">
+                                </div>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-headline-md text-headline-md uppercase text-primary tracking-tight mb-1">
+                                    Kinetic Running</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Aerodynamic
+                                    long-distance runners calibrated with carbon propulsion plates for maximum cadence
+                                    <a class="w-full h-11 px-5 rounded-[20px] bg-surface-container-lowest hover:bg-primary text-on-surface hover:text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-between transition-all shadow-sm"
+                                        data-path="shop-catalog" href="shop.html?cat=running">
+                                        <span>Explore Running</span>
+                                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                    </a>
+                            </div>
+                        </div>
+                        <!-- Category Card 2: Urban Streetwear -->
+                        <div
+                            class="group relative bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                            <div class="flex items-start justify-between mb-space-sm">
+                                <span
+                                    class="font-label-badge text-label-badge text-on-surface-variant tracking-wider uppercase bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm">09
+                                    Models</span>
+                                <span class="font-label-caps text-label-caps text-outline tracking-widest">CAT.
+                                    02</span>
+                            </div>
+                            <!-- Product Image Frame -->
+                            <div
+                                class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+                                <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Minimalist brutalist architectural luxury mens low top sneaker crafted with matte calfskin leather panels, thick sculpted geometric white rubber cupsole, subtle crimson eyelet accent, studio footwear catalog photography centered side view."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqly3ADtTu7238044jHWdGN1nbZv1_doK7rH2h-5U90MxLrSdpCd9AKStQdS6Rx-acR-N71mf5gEDjNbxWGMT-iBhkSIC9ytBRlGe7vD5vCd8t6xebPWVQC7pHkuJrDzUyvsRE2Pofv2S24VU6EfLS4kBX-P9UWZZHW0sRDjXJW1KW1rZ_RpLzN_s2yJxLPYc3TtUTBXje0SelvylbCny6Opv-yrrA9ppoAgWIUak')">
+                                </div>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-headline-md text-headline-md uppercase text-primary tracking-tight mb-1">
+                                    Urban Streetwear</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Architectural
+                                    low-tops and chunky luxury soles designed for structural balance and metropolitan
+                                    endurance.</p>
+                                <a class="w-full h-11 px-5 rounded-[20px] bg-surface-container-lowest hover:bg-primary text-on-surface hover:text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-between transition-all shadow-sm"
+                                    data-path="shop-catalog" href="shop.html?cat=streetwear">
+                                    <span>Explore Streetwear</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Category Card 3: High-Top Performance -->
+                        <div
+                            class="group relative bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                            <div class="flex items-start justify-between mb-space-sm">
+                                <span
+                                    class="font-label-badge text-label-badge text-on-surface-variant tracking-wider uppercase bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm">07
+                                    Models</span>
+                                <span class="font-label-caps text-label-caps text-outline tracking-widest">CAT.
+                                    03</span>
+                            </div>
+                            <!-- Product Image Frame -->
+                            <div
+                                class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+                                <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105"
+                                    data-alt="Technical high-top basketball sneaker silhouette featuring reinforced molded TPU heel support cage, ballistic nylon tongue, micro-cord lacing system and rugged traction lugs on deep charcoal sole, crisp high resolution studio isolation."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUAMcjG_gQuj4uR4PjJiPOzquO5nIaUd9CvgwzbSlbe1Ees55o4-F17n-RVf2yr9IKDg34N0jfGxziBadCLdlFMfejue9O8oDQIddiG2LvkS7DqtwepF3c8VFNUgXJ6kRRImr3fkt51uUm4021au9LPg058H2FrE-wwuaAW01896C5VezWUkbs25cPIEw9Oc21PbVyvISHn7F67oFiHiCqSUG4VvzdNohVgc7hzFE')">
+                                </div>
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-headline-md text-headline-md uppercase text-primary tracking-tight mb-1">
+                                    High-Top Performance</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Ankle-support
+                                    court &amp; rugged urban high-tops built with reinforced TPU cages and high-impact
+                                    shock mitigation.</p>
+                                <a class="w-full h-11 px-5 rounded-[20px] bg-surface-container-lowest hover:bg-primary text-on-surface hover:text-on-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-between transition-all shadow-sm"
+                                    data-path="shop-catalog" href="shop.html?cat=high-top">
+                                    <span>Explore High-Tops</span>
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TRENDING MEN'S FOOTWEAR GRID -->
+            <section class="w-full py-space-xl bg-surface-container-low">
+                <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+                                <span
+                                    class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-secondary-container font-semibold">Field
+                                    Verified</span>
+                            </div>
+                            <h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">Trending
+                                Men's Silhouettes</h2>
+                        </div>
+                        <div class="flex items-center gap-space-xs">
+                            <span class="font-label-badge text-label-badge uppercase tracking-wider text-outline">Active
+                                Batch // 2025 Release</span>
+                        </div>
+                    </div>
+                    <!-- 4 Flagship Shoes Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                        <!-- Shoe 1: Zyro Phantom X Carbon -->
+                        <div
+                            class="bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-surface-container-lowest">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span
+                                        class="font-label-badge text-label-badge uppercase tracking-wider bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface">Running</span>
+                                    <div
+                                        class="flex items-center gap-1 font-label-badge text-label-badge text-secondary-container">
+                                        <span class="material-symbols-outlined text-[14px]"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="font-bold text-on-surface">4.9</span>
+                                    </div>
+                                </div>
+                                <!-- White Image Frame -->
+                                <div
+                                    class="w-full aspect-square bg-[#FFFFFF] rounded p-space-sm flex items-center justify-center my-space-sm shadow-sm overflow-hidden group">
+                                    <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110"
+                                        data-alt="Studio luxury product rendering of the Zyro Phantom X Carbon running shoe, matte obsidian finish, exposed red carbon weave plate through midfoot arch, aerodynamic laser cut venting, isolated lateral view with subtle ground shadow."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKjL7jYYFGv5cN0bMwBMGRIBHIE_XRODwBWIEnYs_4Y3Webrv5zf7m26ReRXg8ufddTw9NhP0GT_CBKj3d8LRPINTCE3TdQc1-q8km5DbAlpD1TvQ2uWUCxmn6jftz8NeCNKlAOKFEbIrHkk2nl5HLzypTeuDNzKyxHkOGd8XyZxVnw0dhKOfwowuaMCMzFLLdj9tdN2syYVQ4Jl2HrqVIfEnInhNOdm4VfCrRQik')">
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-primary uppercase font-bold tracking-tight">
+                                    Zyro Phantom X Carbon</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                                    Full-length carbon chassis paired with supercritical nitrogen foam midsole for elite
+                                    marathon pacing.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <span
+                                        class="font-headline-md text-headline-md font-bold text-secondary-container">$210</span>
+                                    <span class="font-label-badge text-label-badge uppercase text-outline">US 7 - 13 IN
+                                        STOCK</span>
+                                </div>
+                                <!-- 3 Pill Action Buttons -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <a class="h-10 rounded-[20px] bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center transition-all"
+                                            data-path="shop-catalog" href="product-detail.html?sku=phantom-x">
+                                            Details
+                                        </a>
+                                        <button
+                                            class="h-10 rounded-[20px] bg-primary hover:bg-on-background text-on-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center gap-1 transition-all"
+                                            onclick="addToCart('Zyro Phantom X Carbon', 210, 'Running')" type="button">
+                                            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                                    <a class="h-10 rounded-[20px] bg-[#E11D48] hover:bg-secondary text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center shadow-md transition-all hover:shadow-[0_8px_18px_rgba(225,29,72,0.35)]"
+                                        data-path="checkout" href="buy.html?sku=phantom-x">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shoe 2: Zyro Velocity Knit Runner -->
+                        <div
+                            class="bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-surface-container-lowest">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span
+                                        class="font-label-badge text-label-badge uppercase tracking-wider bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface">Running</span>
+                                    <div
+                                        class="flex items-center gap-1 font-label-badge text-label-badge text-secondary-container">
+                                        <span class="material-symbols-outlined text-[14px]"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="font-bold text-on-surface">4.8</span>
+                                    </div>
+                                </div>
+                                <!-- White Image Frame -->
+                                <div
+                                    class="w-full aspect-square bg-[#FFFFFF] rounded p-space-sm flex items-center justify-center my-space-sm shadow-sm overflow-hidden group">
+                                    <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110"
+                                        data-alt="Technical footwear catalog photograph of Zyro Velocity Knit Runner, seamless circular-knit upper in stone gray and crimson accent lacing, ergonomic sock-like ankle collar, multi-density segmented traction sole on white backdrop."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASSBLy5XIBnVZ-i9kqsC3gg4ZLvk_6tTOhoO7ajlVRIDvSGv2lxSQN3VeiHI4BKRq9Zv605amTRRaczwkkW1uUOsamKIU8_yQmqmGnDsJ-UDBZ59CuHV218VEr8PLeRqJCLZnIOaM4b4YbtzpbILDJIJo3p82J5J5ifvzl5I7JmZEScYAQVT-cWOlM4fbz8CwB_sSkykM08ByrqgB3j0jwOgPaKxoWXfVGUuQvfpg')">
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-primary uppercase font-bold tracking-tight">
+                                    Zyro Velocity Knit Runner</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Seamless
+                                    multi-gauge technical knit upper delivering friction-free breathability over high
+                                    mileage.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <span
+                                        class="font-headline-md text-headline-md font-bold text-secondary-container">$185</span>
+                                    <span class="font-label-badge text-label-badge uppercase text-outline">US 8 - 14 IN
+                                        STOCK</span>
+                                </div>
+                                <!-- 3 Pill Action Buttons -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <a class="h-10 rounded-[20px] bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center transition-all"
+                                            data-path="shop-catalog" href="product-detail.html?sku=velocity-knit">
+                                            Details
+                                        </a>
+                                        <button
+                                            class="h-10 rounded-[20px] bg-primary hover:bg-on-background text-on-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center gap-1 transition-all"
+                                            onclick="addToCart('Zyro Velocity Knit Runner', 185, 'Running')"
+                                            type="button">
+                                            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                                    <a class="h-10 rounded-[20px] bg-[#E11D48] hover:bg-secondary text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center shadow-md transition-all hover:shadow-[0_8px_18px_rgba(225,29,72,0.35)]"
+                                        data-path="checkout" href="buy.html?sku=velocity-knit">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shoe 3: Zyro Streetcraft Low-Top -->
+                        <div
+                            class="bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-surface-container-lowest">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span
+                                        class="font-label-badge text-label-badge uppercase tracking-wider bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface">Streetwear</span>
+                                    <div
+                                        class="flex items-center gap-1 font-label-badge text-label-badge text-secondary-container">
+                                        <span class="material-symbols-outlined text-[14px]"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="font-bold text-on-surface">5.0</span>
+                                    </div>
+                                </div>
+                                <!-- White Image Frame -->
+                                <div
+                                    class="w-full aspect-square bg-[#FFFFFF] rounded p-space-sm flex items-center justify-center my-space-sm shadow-sm overflow-hidden group">
+                                    <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110"
+                                        data-alt="Architectural low top luxury men sneaker crafted in premium off-white Italian calf leather, tonal stitching, chunky sculpted angular rubber outsole with crimson red heel tap, luxury fashion footwear editorial lighting."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtiWYxRUveb8gx_qqhxUAa8gBhcn_PFHLNmF0rDjy_y6BQ36TCMj27H1BSg5rk2pdcmIeSLlQ5lQO8p7iND1_d__gnF-lTsRZJxqlcUcF5jEZQi30n-8qWEzYAL5PKXlEA4ze2avmAJwmhUYY-tB2sdKNzl8IX4G_5GInF3B_8Aib36t1yGWaoNZ685oq-WapSw9S7JRa3ixpHgZjX6uc7oOVJwj8gAYSHqm7a_iM')">
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-primary uppercase font-bold tracking-tight">
+                                    Zyro Streetcraft Low-Top</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                                    Handcrafted Italian architectural calfskin anchored to an avant-garde vulcanized
+                                    geometric sole.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <span
+                                        class="font-headline-md text-headline-md font-bold text-secondary-container">$195</span>
+                                    <span class="font-label-badge text-label-badge uppercase text-outline">LIMITED RUN
+                                        500 PAIRS</span>
+                                </div>
+                                <!-- 3 Pill Action Buttons -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <a class="h-10 rounded-[20px] bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center transition-all"
+                                            data-path="shop-catalog" href="product-detail.html?sku=streetcraft-low">
+                                            Details
+                                        </a>
+                                        <button
+                                            class="h-10 rounded-[20px] bg-primary hover:bg-on-background text-on-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center gap-1 transition-all"
+                                            onclick="addToCart('Zyro Streetcraft Low-Top', 195, 'Streetwear')"
+                                            type="button">
+                                            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                                    <a class="h-10 rounded-[20px] bg-[#E11D48] hover:bg-secondary text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center shadow-md transition-all hover:shadow-[0_8px_18px_rgba(225,29,72,0.35)]"
+                                        data-path="checkout" href="buy.html?sku=streetcraft-low">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shoe 4: Zyro Apex High-Top Court -->
+                        <div
+                            class="bg-[#F4F4F5] rounded p-space-md flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:bg-surface-container-lowest">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-xs">
+                                    <span
+                                        class="font-label-badge text-label-badge uppercase tracking-wider bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface">High-Tops</span>
+                                    <div
+                                        class="flex items-center gap-1 font-label-badge text-label-badge text-secondary-container">
+                                        <span class="material-symbols-outlined text-[14px]"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="font-bold text-on-surface">4.9</span>
+                                    </div>
+                                </div>
+                                <!-- White Image Frame -->
+                                <div
+                                    class="w-full aspect-square bg-[#FFFFFF] rounded p-space-sm flex items-center justify-center my-space-sm shadow-sm overflow-hidden group">
+                                    <div class="w-full h-full bg-contain bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-110"
+                                        data-alt="High angle catalog presentation of high-top men performance court shoe, matte ballistic ripstop collar, glossy black molded TPU ankle stabilizer, deep crimson lace loops, aggressive herringbone sole grip pattern on white surface."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwPzj7jCeDPiAFPuL0G4Zo-usjFRKyl1Il8pmbtU_p_qmhV-9GZOa0Cf8VpkE2c33Pc-dYnSnNoub34q2sJN5ukSILGcqnNG4ttknA7yeEmyNPIHkwELB3yUnEWIxXkNmXKSiSpIOLIPs2ApCQosh_-y2pT2OyPBNZD43ZoXCOb5Cee8ydBMFWCS_jEl0LbioX6hVYmOG80zHo9YtdSYAMgxvG_5F8xk7At3cLgeM')">
+                                    </div>
+                                </div>
+                                <h3
+                                    class="font-headline-sm text-headline-sm text-primary uppercase font-bold tracking-tight">
+                                    Zyro Apex High-Top Court</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                                    Reinforced dual-stage lateral stability collars providing high-torque protection on
+                                    asphalt and indoor wood.</p>
+                            </div>
+                            <div class="mt-space-md pt-space-sm flex flex-col gap-space-sm">
+                                <div class="flex items-baseline justify-between">
+                                    <span
+                                        class="font-headline-md text-headline-md font-bold text-secondary-container">$230</span>
+                                    <span class="font-label-badge text-label-badge uppercase text-outline">US 7.5 - 13
+                                        IN STOCK</span>
+                                </div>
+                                <!-- 3 Pill Action Buttons -->
+                                <div class="flex flex-col gap-2">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <a class="h-10 rounded-[20px] bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center transition-all"
+                                            data-path="shop-catalog" href="product-detail.html?sku=apex-court">
+                                            Details
+                                        </a>
+                                        <button
+                                            class="h-10 rounded-[20px] bg-primary hover:bg-on-background text-on-primary font-label-caps text-label-caps uppercase tracking-wider flex items-center justify-center gap-1 transition-all"
+                                            onclick="addToCart('Zyro Apex High-Top Court', 230, 'High-Tops')"
+                                            type="button">
+                                            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+                                            <span>Add</span>
+                                        </button>
+                                    </div>
+                                    <a class="h-10 rounded-[20px] bg-[#E11D48] hover:bg-secondary text-on-secondary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center shadow-md transition-all hover:shadow-[0_8px_18px_rgba(225,29,72,0.35)]"
+                                        data-path="checkout" href="buy.html?sku=apex-court">
+                                        Buy Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PERFORMANCE INNOVATION & CRAFTSMANSHIP BANNER -->
+            <section class="w-full py-space-xl bg-primary text-on-primary overflow-hidden relative">
+                <!-- Carbon fiber weave decorative SVG graphic background -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <svg class="w-full h-full" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern height="20" id="carbon-weave" patternunits="userSpaceOnUse" width="20">
+                                <rect fill="#ffffff" height="10" opacity="0.3" width="10"></rect>
+                                <rect fill="#ffffff" height="10" opacity="0.3" width="10" x="10" y="10"></rect>
+                                <path d="M0,10 L10,0 M10,20 L20,10" stroke="#ffffff" stroke-width="1.5"></path>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#carbon-weave)" height="100%" width="100%"></rect>
+                    </svg>
+                </div>
+                <!-- Soft red accent light leak -->
+                <div
+                    class="absolute -right-32 top-1/4 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none">
+                </div>
+                <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop relative z-10">
+                    <!-- Section Header -->
+                    <div class="max-w-2xl mb-space-xl">
+                        <span
+                            class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-secondary-container font-semibold">Laboratory
+                            Deconstruction</span>
+                        <h2 class="font-headline-lg text-headline-lg uppercase text-surface-bright tracking-tight mt-1">
+                            Anatomy of Kinetic Ergonomics</h2>
+                        <p class="font-body-md text-body-md text-on-primary-container mt-2">Every milligram is optimized
+                            for thermal dissipation, impact dampening, and instantaneous lateral energy transfer.</p>
+                    </div>
+                    <!-- 3 Technical Highlight Blocks with Cutaways -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+                        <!-- Module 1: Carbon Fiber Weave Propulsion -->
+                        <div
+                            class="bg-primary-container rounded p-space-md flex flex-col justify-between group hover:bg-tertiary-container transition-all duration-300">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-sm">
+                                    <span
+                                        class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">Sub-Layer
+                                        01</span>
+                                    <span
+                                        class="material-symbols-outlined text-[20px] text-on-primary-container">layers</span>
+                                </div>
+                                <!-- Technical Cutaway Illustration Frame -->
+                                <div
+                                    class="relative w-full aspect-[16/10] bg-tertiary-container rounded mb-space-md overflow-hidden flex items-center justify-center p-space-xs">
+                                    <div class="w-full h-full bg-cover bg-center rounded"
+                                        data-alt="Macro cutaway photograph of an ultra high-modulus dual-weave carbon fiber torsional plate inside a sneaker sole, showing real twill fiber weave texture under clinical laboratory white inspection lighting with millimeter grid lines."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAek574jWNfKh_52C8gFg5dQlXb0e_3X0h4mgfT7P2wqFAs_vO1h7NSbSdm7y6oFo0QqxF6xznLNVOC6jl-6LiQ6SioaY9WXurt36L1McQ-W9I7rfsD3tZa_hg-UT25l8CcxFnsqoA_pV_3RHePCk7qySgZBLL0x8rWF8wLPOs8sH8yjlgG9J8hzOvOr6LdWiJLJXPWR8mtqkj-AiOLKVBrjc8iM769k_D73nB_xw8')">
+                                    </div>
+                                    <div
+                                        class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur font-label-badge text-label-badge text-surface-bright">
+                                        3K WEAVE</div>
+                                </div>
+                                <h3
+                                    class="font-headline-md text-headline-md text-surface-bright uppercase font-bold tracking-tight mb-2">
+                                    3K Carbon Fiber Weave</h3>
+                                <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                                    Proprietary structural shank running from midfoot to metatarsal heads. Converts
+                                    vertical heel-strike compression into explosive forward propulsion with zero
+                                    torsional twisting.
+                                </p>
+                            </div>
+                            <!-- Spec Matrix Data -->
+                            <div class="mt-space-md pt-space-sm bg-primary/40 rounded p-space-sm">
+                                <div class="flex justify-between items-center font-label-caps text-label-caps">
+                                    <span class="text-on-primary-container uppercase">Torsional Rigidity</span>
+                                    <span class="text-surface-bright font-bold">142 Nm / Deg</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 2: Air Cushion Zoom Cutaway -->
+                        <div
+                            class="bg-primary-container rounded p-space-md flex flex-col justify-between group hover:bg-tertiary-container transition-all duration-300">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-sm">
+                                    <span
+                                        class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">Sub-Layer
+                                        02</span>
+                                    <span
+                                        class="material-symbols-outlined text-[20px] text-on-primary-container">air</span>
+                                </div>
+                                <!-- Cutaway Image -->
+                                <div
+                                    class="relative w-full aspect-[16/10] bg-tertiary-container rounded mb-space-md overflow-hidden flex items-center justify-center p-space-xs">
+                                    <div class="w-full h-full bg-cover bg-center rounded"
+                                        data-alt="Detailed technical close-up cutaway view of a pressurized kinetic nitrogen cushioning cell embedded inside transparent polymer sole, microscopic filaments absorbing kinetic pressure, industrial technical product render."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlTf30V8tSmxJjknEjTlpnMKXKHp4fu5m4CAnDhXp-yBDBrZ17QkO4DHMOqpByBVXgZkUkUHjFKCt4CJcXw-lOF5fNid4lISSf66d5QZ0VctrJhDeJzEVrsALCUD39PENrwcIQm-LCb1sUsmVp5l8oVEcIP5QXEKUUjE3ztSiZEpvaJiDoBqPznfrQvGqSq06F8ne-ROYWpnXLCrsqHQUamJH0jrwLkumUK9b7rs4')">
+                                    </div>
+                                    <div
+                                        class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-badge text-label-badge">
+                                        24 PSI NITROGEN</div>
+                                </div>
+                                <h3
+                                    class="font-headline-md text-headline-md text-surface-bright uppercase font-bold tracking-tight mb-2">
+                                    Dual-Chamber Zoom Cell</h3>
+                                <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                                    Hermetically sealed micro-chambers pressurized with inert gas. Absorbs 42% more peak
+                                    ground reaction force than conventional EVA, preventing musculoskeletal fatigue.
+                                </p>
+                            </div>
+                            <!-- Spec Matrix Data -->
+                            <div class="mt-space-md pt-space-sm bg-primary/40 rounded p-space-sm">
+                                <div class="flex justify-between items-center font-label-caps text-label-caps">
+                                    <span class="text-on-primary-container uppercase">Shock Dissipation</span>
+                                    <span class="text-surface-bright font-bold">42.4% Delta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Module 3: Breathable Aerospace Knit -->
+                        <div
+                            class="bg-primary-container rounded p-space-md flex flex-col justify-between group hover:bg-tertiary-container transition-all duration-300">
+                            <div>
+                                <div class="flex items-center justify-between mb-space-sm">
+                                    <span
+                                        class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">Sub-Layer
+                                        03</span>
+                                    <span
+                                        class="material-symbols-outlined text-[20px] text-on-primary-container">texture</span>
+                                </div>
+                                <!-- Cutaway Image -->
+                                <div
+                                    class="relative w-full aspect-[16/10] bg-tertiary-container rounded mb-space-md overflow-hidden flex items-center justify-center p-space-xs">
+                                    <div class="w-full h-full bg-cover bg-center rounded"
+                                        data-alt="Extreme macro photography of engineered aerodynamic jacquard knit textile, showing gradient perforation holes for air cooling, high-tensile yarn micro-structure in black and crimson threads, high resolution industrial texture."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAbeLpX3FY8UKyQDzVMut3fZsA1qCD94pD_4GF7hIsKkmRBewIzZg06C1zH33ELRTQuV-ARoUXm6AmGJqSbjH42aYUzvt6SX-uS0l-HEIgiYNFIHgfYPZvdL0Ae02eEEkn3yUA5AB8P-gTAaLY2ICdeXgMg15EYX78usvM3l1w6hnbxA1-Xdquv2MSt3e3V8zWhCl4AMaa8LrChlYiKHg-AY_mAZakGvf0nEcv7wkg')">
+                                    </div>
+                                    <div
+                                        class="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur font-label-badge text-label-badge text-surface-bright">
+                                        ZERO-FRICTION</div>
+                                </div>
+                                <h3
+                                    class="font-headline-md text-headline-md text-surface-bright uppercase font-bold tracking-tight mb-2">
+                                    Aerospace Knit Upper</h3>
+                                <p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+                                    Single-piece continuous jacquard thread weave engineered with differentiated pore
+                                    sizes. Cool air enters across the forefoot vamp while heat escapes laterally.
+                                </p>
+                            </div>
+                            <!-- Spec Matrix Data -->
+                            <div class="mt-space-md pt-space-sm bg-primary/40 rounded p-space-sm">
+                                <div class="flex justify-between items-center font-label-caps text-label-caps">
+                                    <span class="text-on-primary-container uppercase">Thermal Flow Index</span>
+                                    <span class="text-surface-bright font-bold">1,820 L/m²/s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lab Guarantee Callout Bar -->
+                    <div
+                        class="mt-space-xl bg-tertiary-container rounded-lg p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+                        <div class="flex items-center gap-space-md">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container/10 flex items-center justify-center text-secondary-container flex-shrink-0">
+                                <span class="material-symbols-outlined text-[24px]">precision_manufacturing</span>
+                            </div>
+                            <div>
+                                <h4 class="font-headline-sm text-headline-sm text-surface-bright uppercase font-bold">
+                                    Bespoke Fitting &amp; Dynamic Gait Calibration</h4>
+                                <p class="font-body-sm text-body-sm text-on-primary-container">Every pair includes
+                                    interchangeable carbon insoles calibrated for neutral or pronating strides.</p>
+                            </div>
+                        </div>
+                        <a class="h-11 px-6 rounded-[20px] bg-surface-bright hover:bg-surface text-primary font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center flex-shrink-0 transition-all"
+                            data-path="about-contact" href="about-contact.html">
+                            Lab Whitepaper
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Client-side Script for Cart Feedback & Modal Control -->
+            <script>
+                function addToCart(title, price, category) {
+                    // 1. Update localStorage Cart
+                    var cart = JSON.parse(localStorage.getItem('zyro_cart') || '[]');
+                    var existing = cart.find(function (item) { return item.title === title; });
+                    if (existing) {
+                        existing.quantity = (existing.quantity || 1) + 1;
+                    } else {
+                        cart.push({
+                            id: 'zyro-' + Date.now(),
+                            title: title,
+                            price: price,
+                            category: category,
+                            quantity: 1,
+                            size: 'US 10.5'
+                        });
+                    }
+                    localStorage.setItem('zyro_cart', JSON.stringify(cart));
+
+                    // 2. Refresh Shell Cart Badge
+                    if (typeof window.updateZyroCart === 'function') {
+                        window.updateZyroCart();
+                    }
+
+                    // 3. Trigger Polished Toast Notification
+                    var toast = document.getElementById('zyro-toast');
+                    var toastMsg = document.getElementById('toast-message');
+                    if (toast && toastMsg) {
+                        toastMsg.textContent = title + ' added to cart ($' + price + ')';
+                        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                        toast.classList.add('opacity-100', 'translate-y-0');
+
+                        setTimeout(function () {
+                            toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                            toast.classList.remove('opacity-100', 'translate-y-0');
+                        }, 3200);
+                    }
+                }
+
+                // Modal Film interaction
+                document.addEventListener('DOMContentLoaded', function () {
+                    var filmBtn = document.getElementById('open-film-btn');
+                    var filmModal = document.getElementById('film-modal');
+                    var closeFilm = document.getElementById('close-film');
+
+                    if (filmBtn && filmModal && closeFilm) {
+                        filmBtn.addEventListener('click', function () {
+                            filmModal.classList.remove('opacity-0', 'pointer-events-none');
+                            filmModal.classList.add('opacity-100');
+                        });
+
+                        closeFilm.addEventListener('click', function () {
+                            filmModal.classList.add('opacity-0', 'pointer-events-none');
+                            filmModal.classList.remove('opacity-100');
+                        });
+
+                        filmModal.addEventListener('click', function (e) {
+                            if (e.target === filmModal) {
+                                filmModal.classList.add('opacity-0', 'pointer-events-none');
+                                filmModal.classList.remove('opacity-100');
+                            }
+                        });
+                    }
+                });
+            </script>
+        </div>
+    </main>
+    <footer class="w-full bg-primary-container text-on-primary-container pt-space-xl pb-space-lg">
+        <div class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop">
+            <div class="py-space-lg mb-space-xl">
+                <div class="flex items-center justify-between mb-space-md"><span
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-on-primary-container">Field
+                        Tested • Verified Owners</span><span
+                        class="font-label-badge text-label-badge tracking-wider text-on-primary-container">RATING 4.9 /
+                        5.0</span></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"The carbon
+                            plate stability in the Aero-Glide is unmatched. Sub-3 marathon with zero hot spots."</p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Marcus V.</span><span
+                                class="text-on-tertiary-container">Aero-Glide Pro • US 10.5</span>
+                        </div>
+                    </div>
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star_half</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"Minimal
+                            brutalist aesthetic with military-grade construction. Worn daily in NYC for 4 months
+                            straight."</p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Devon R.</span><span
+                                class="text-on-tertiary-container">K-01 Brutalist High • US 11</span>
+                        </div>
+                    </div>
+                    <div class="bg-tertiary-container p-space-md rounded">
+                        <div class="flex items-center justify-between mb-space-sm">
+                            <div class="flex text-secondary-container text-[14px]"><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span><span
+                                    class="material-symbols-outlined text-[16px]">star</span></div><span
+                                class="inline-flex items-center gap-1 font-label-badge text-label-badge text-secondary-container uppercase tracking-wider bg-secondary-container/10 px-2 py-0.5 rounded-full"><span
+                                    class="material-symbols-outlined text-[12px]">verified</span> Verified</span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm italic">"Exceptional
+                            heel lock and kinetic return. You immediately feel the precision engineering in the gait."
+                        </p>
+                        <div
+                            class="flex items-baseline justify-between font-label-caps text-label-caps text-on-primary-container">
+                            <span class="font-semibold text-surface-bright">Kaelen H.</span><span
+                                class="text-on-tertiary-container">V-Stride Kinetic • US 9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+                <div class="lg:col-span-5">
+                    <div class="flex items-baseline tracking-tight mb-space-sm"><span
+                            class="font-headline-md text-headline-md tracking-tighter text-surface-bright font-bold">ZYRO</span><span
+                            class="inline-block w-2 h-2 rounded-full bg-secondary-container mx-1 align-baseline"></span><span
+                            class="font-label-caps text-label-caps tracking-[0.25em] text-surface-bright font-semibold ml-0.5">SHOES</span>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-tertiary-container max-w-md mb-space-md">Engineered for
+                        every step. Premium craftsmanship meets cutting-edge kinetic ergonomics. Designed in technical
+                        athletic research laboratories for optimal cadence and structural longevity.</p>
+                    <div class="flex items-center gap-space-sm"><span
+                            class="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container flex items-center gap-1"><span
+                                class="material-symbols-outlined text-[16px] text-secondary-container">lock</span>
+                            256-Bit SSL Encrypted Protocol</span></div>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Shop Catalog</h4>
+                    <ul class="space-y-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Kinetic Running</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Technical Streetwear</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Reinforced High-Tops</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog" href="#">Lab
+                                Performance Prototypes</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="shop-catalog"
+                                href="#">Archival Silhouettes</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Customer Care</h4>
+                    <ul class="space-y-space-xs font-body-sm text-body-sm text-on-tertiary-container">
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="checkout" href="#">Order
+                                Tracking</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Kinetic Size Matrix</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Global Returns &amp; Warranty</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Material Integrity Index</a></li>
+                        <li><a class="hover:text-surface-bright transition-colors" data-path="about-contact"
+                                href="#">Direct Support Desk</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4
+                        class="font-label-caps text-label-caps uppercase tracking-widest text-surface-bright mb-space-md">
+                        Dispatch Dispatcher</h4>
+                    <p class="font-body-sm text-body-sm text-on-tertiary-container mb-space-sm">Receive drop alerts,
+                        prototype allocations, and lab release logs directly to your inbox.</p>
+                    <form class="flex items-center gap-space-xs" onsubmit="event.preventDefault();"><input
+                            class="h-12 flex-1 rounded-full bg-tertiary-container px-space-md font-body-sm text-body-sm text-surface-bright placeholder:text-on-tertiary-container outline-none focus:ring-1 focus:ring-secondary-container transition-all"
+                            placeholder="Enter institutional or personal email" type="email" /><button
+                            class="h-12 px-space-md rounded-full bg-secondary-container hover:bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider transition-all flex items-center justify-center"
+                            type="submit"><span
+                                class="material-symbols-outlined text-[18px]">arrow_forward</span></button></form>
+                </div>
+            </div>
+            <div
+                class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-tertiary-container">
+                <p>© 2025 ZYRO SHOES LABS INC. All engineering rights reserved.</p>
+                <div class="flex items-center gap-space-md font-label-badge text-label-badge uppercase tracking-wider">
+                    <span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>APPLE PAY</span><span
+                        class="text-secondary-container font-bold">SECURE CHECKOUT</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>(function () { function updateCart() { var cart = JSON.parse(localStorage.getItem('zyro_cart') || '[]'); var total = cart.reduce(function (acc, item) { return acc + (item.quantity || 1); }, 0); var badge = document.getElementById('cart-badge'); if (badge) { badge.textContent = total; badge.style.display = total > 0 ? 'flex' : 'none'; } } window.addEventListener('storage', updateCart); window.addEventListener('DOMContentLoaded', updateCart); window.updateZyroCart = updateCart; })();
+    </script>
+</body>
+
+</html>
