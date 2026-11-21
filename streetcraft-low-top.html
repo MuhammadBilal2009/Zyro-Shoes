@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZYRO STREETCRAFT LOW-TOP — Product Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f6;
+            color: #111115;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen py-10 px-4 sm:px-8">
+    <div class="max-w-5xl mx-auto">
+        <a href="index.html"
+            class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gray-500 hover:text-black mb-6">
+            ← Back to Collection
+        </a>
+
+        <div
+            class="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 sm:p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- Left: Product Image Gallery -->
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <span
+                        class="bg-gray-100 text-gray-700 text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+                        STREETWEAR
+                    </span>
+                    <span class="text-sm font-bold text-gray-800 flex items-center gap-1">
+                        <span class="text-[#e11d48]">★</span> 5.0 <span class="text-gray-400 font-medium">(64
+                            Reviews)</span>
+                    </span>
+                </div>
+
+                <div class="bg-[#ececef] rounded-2xl h-80 sm:h-96 flex items-center justify-center p-6 overflow-hidden">
+                    <img id="main-img"
+                        src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=900&q=80"
+                        alt="ZYRO STREETCRAFT LOW-TOP"
+                        class="max-h-full object-contain transition-transform duration-300 hover:scale-105" />
+                </div>
+
+                <div class="grid grid-cols-3 gap-3 mt-4">
+                    <button onclick="document.getElementById('main-img').src=this.querySelector('img').src"
+                        class="bg-[#ececef] rounded-xl p-2 h-20 flex items-center justify-center border-2 border-[#e11d48]">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=900&q=80"
+                            class="max-h-full object-contain" />
+                    </button>
+                    <button onclick="document.getElementById('main-img').src=this.querySelector('img').src"
+                        class="bg-[#ececef] rounded-xl p-2 h-20 flex items-center justify-center border-2 border-transparent hover:border-gray-300">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=900&q=80"
+                            class="max-h-full object-contain" />
+                    </button>
+                    <button onclick="document.getElementById('main-img').src=this.querySelector('img').src"
+                        class="bg-[#ececef] rounded-xl p-2 h-20 flex items-center justify-center border-2 border-transparent hover:border-gray-300">
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80"
+                            class="max-h-full object-contain" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Product Info -->
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-black tracking-tight uppercase text-gray-900">
+                    ZYRO STREETCRAFT LOW-TOP
+                </h1>
+                <p class="text-gray-500 text-sm sm:text-base mt-3 leading-relaxed">
+                    Handcrafted Italian architectural calfskin anchored to an avant-garde vulcanized geometric sole.
+                    Individually numbered edition with signature crimson heel stabilizer.
+                </p>
+
+                <div class="flex items-center justify-between border-y border-gray-100 py-5 my-6">
+                    <span class="text-3xl font-black text-[#e11d48]">$195</span>
+                    <span
+                        class="text-xs font-extrabold uppercase tracking-wider text-[#e11d48] bg-rose-50 border border-rose-200 px-3 py-1.5 rounded-full">
+                        LIMITED RUN 500 PAIRS
+                    </span>
+                </div>
+
+                <!-- Size Selector -->
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs font-bold uppercase tracking-wider text-gray-500 mb-2.5">
+                        <span>Select Size (US)</span>
+                        <span>Numbered Collector Box</span>
+                    </div>
+                    <div class="grid grid-cols-4 sm:grid-cols-6 gap-2">
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl border border-gray-200 text-xs font-bold hover:border-black">7.5</button>
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl border border-gray-200 text-xs font-bold hover:border-black">8.5</button>
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl bg-black text-white border border-black text-xs font-bold">9.5</button>
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl border border-gray-200 text-xs font-bold hover:border-black">10.5</button>
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl border border-gray-200 text-xs font-bold hover:border-black">11.5</button>
+                        <button onclick="selectSize(this)"
+                            class="size-btn py-2.5 rounded-xl border border-gray-200 text-xs font-bold hover:border-black">12.5</button>
+                    </div>
+                </div>
+
+                <!-- Specs -->
+                <div class="grid grid-cols-3 gap-3 bg-gray-50 rounded-2xl p-4 mb-6 text-center">
+                    <div>
+                        <p class="text-[11px] font-bold uppercase text-gray-400">Leather</p>
+                        <p class="text-sm font-extrabold text-gray-900 mt-0.5">Italian Nappa</p>
+                    </div>
+                    <div class="border-x border-gray-200">
+                        <p class="text-[11px] font-bold uppercase text-gray-400">Outsole</p>
+                        <p class="text-sm font-extrabold text-gray-900 mt-0.5">Vulcanized</p>
+                    </div>
+                    <div>
+                        <p class="text-[11px] font-bold uppercase text-gray-400">Edition</p>
+                        <p class="text-sm font-extrabold text-gray-900 mt-0.5">001 / 500</p>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-3">
+                    <button onclick="alert('Added ZYRO STREETCRAFT LOW-TOP to cart!')"
+                        class="w-full py-3.5 rounded-full bg-black text-white text-xs font-extrabold uppercase tracking-wider hover:bg-gray-800 transition">
+                        🛒 Add to Cart
+                    </button>
+                    <button onclick="alert('Proceeding to Buy Now — $195')"
+                        class="w-full py-3.5 rounded-full bg-[#e11d48] text-white text-xs font-extrabold uppercase tracking-wider hover:bg-[#be123c] transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectSize(btn) {
+            document.querySelectorAll('.size-btn').forEach(b => {
+                b.classList.remove('bg-black', 'text-white', 'border-black');
+                b.classList.add('border-gray-200');
+            });
+            btn.classList.add('bg-black', 'text-white', 'border-black');
+            btn.classList.remove('border-gray-200');
+        }
+    </script>
+</body>
+
+</html>
